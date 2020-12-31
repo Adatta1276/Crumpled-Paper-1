@@ -59,7 +59,11 @@ function keyPressed() {
 	if(keyWentDown(UP_ARROW)) {
         Matter.Body.applyForce(PAPER1.body,PAPER1.body.position,{x:43,y:-33});
 	}
-}
+	
+	if(keyWentDown(UP_ARROW) && keyDown(UP_ARROW)) {
+		Matter.Body.applyForce(PAPER1.body,PAPER1.body.position,
+				       {
+		}
 
 
 
